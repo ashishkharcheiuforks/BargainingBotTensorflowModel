@@ -70,14 +70,13 @@ def build_model():
         layers.Dense(20 , activation=tf.nn.relu , 
                      input_shape=[len(train_dataset.keys())], name='inputs'),
         layers.Dense(64 , activation=tf.nn.relu),
-        layers.Dense(64 , activation=tf.nn.relu),
         layers.Dense(1 , name='outputs')
     ])
     
     optimizer = tf.train.AdamOptimizer(0.001)
 
     
-    model.compile(loss='mse',
+    model.compile(loss='mae',
                   optimizer=optimizer,
                   metrics=['mae', 'mse' , 'acc'])
     
