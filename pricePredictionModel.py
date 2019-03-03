@@ -94,7 +94,7 @@ class PrintDot(keras.callbacks.Callback):
         print('.', end='')
 
 
-EPOCHS = 2000
+EPOCHS = 150
 
 history = model.fit(
     train_dataset, train_labels, epochs=EPOCHS, validation_split=0.2, verbose=0,
