@@ -4,9 +4,9 @@ This is the machine learning model that predicts the price that the bot uses to 
 
 This is a **Linear Regression Model** made using the **Keras** API
 (Note that this model was **not** made using the latest version of tensorflow i.e Tensorflow 2.0)
-
+##
 [This is the dataset used for training](https://github.com/shounakmulay/BargainingBotTensorflowModel/blob/master/PricePredictionDataset_50k.csv). 
-
+##
 ### Try it for yourself:
 #### [Try in Google Colab](https://colab.research.google.com/drive/1WQtmZqrzKNKHTnOtspu5VMl_QeZy6OEu)
 
@@ -15,6 +15,7 @@ This is a **Linear Regression Model** made using the **Keras** API
 ```
 git clone https://github.com/shounakmulay/BargainingBotTensorflowModel.git 
 ```
+##
 Once the model is trained the last steps export the model in the format that can be used for serving by the Cloud ML Engine.
 * Upload this model to a bucket in Firestore Storage. 
 * Then create a new model in ML Engine. 
