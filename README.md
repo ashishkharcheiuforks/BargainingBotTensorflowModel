@@ -16,7 +16,7 @@ This is a **Linear Regression Model** made using the **Keras** API
 git clone https://github.com/shounakmulay/BargainingBotTensorflowModel.git 
 ```
 ##
-Once the model is trained the last steps export the model in the format that can be used for serving by the Cloud ML Engine.
+Once the model is trained the last steps export the model in the format that can be used for serving by the [Cloud ML Engine](https://cloud.google.com/ml-engine/).
 * Upload this model to a bucket in Firestore Storage. 
 * Then create a new model in ML Engine. 
 * Next create a version for this model.
@@ -26,5 +26,5 @@ Once the model is trained the last steps export the model in the format that can
   * Select the Cloud Storage directory to which you previously saved the exported model.
   * Save the version.
 * Wait for the version to be deployed and ready for prediction. (A green tick will appear left to the name of the version)
-* If your are following along the entire project your code in the [Webhook repo]() will now work once you enter the proper path to the model in your code.
+* If your are following along the entire project your code in the [Webhook repo](https://github.com/shounakmulay/BargainingBotDialogflowWebhook) will now work once you enter the proper path to the model in your code.
  
